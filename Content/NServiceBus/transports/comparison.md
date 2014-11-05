@@ -19,7 +19,7 @@ Choosing the correct transport can be challenging and the choice can depend on s
 
  |MSMQ|SQL Server|RabbitMQ|Azure ServiceBus|Azure Storage Queues
 |---              |---         |---               |---              |---                           |---
-|Type|Queue|Broker|Broker|Broker|Broker
+|Type|Store & Forward|Broker|Broker|Broker|Broker
 |Local Transactions|&#10004;|&#10004;|&#10006;|&#10004;|&#10006;
 |MSDTC|&#10004;|&#10004;|&#10006;|&#10006;|&#10006;
 |Ordering|Fi-Fo|Fi-Fo|&#10006;|Fi-Fo \*|&#10006;
@@ -36,7 +36,6 @@ Choosing the correct transport can be challenging and the choice can depend on s
 |Authentication|&#10006;|?|Plugin based|Symmetric key|Symmetric key
 |Access control model|ACL|?|Host & Resource based|Delegated access via SAS tokens|RBAC via ACS
 |HA support|&#10006;|User|&#10004;\*|&#10004;|&#10004;
-|Post & Forward|&#10004;|&#10006;|&#10006;|&#10006;|&#10006;
 |Required external SDK|&#10006;|&#10006;|RabbitMQ Client|Azure SDK|Azure SDK
 
 
